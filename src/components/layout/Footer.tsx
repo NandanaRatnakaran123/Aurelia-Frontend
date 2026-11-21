@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/seo";
+import Logo from "@/components/ui/Logo";
 
 const heading = "mb-3.5 text-xs uppercase tracking-[0.22em] text-gold";
 
@@ -8,7 +9,7 @@ export default function Footer() {
     <footer className="bg-footer px-[clamp(20px,5vw,72px)] pb-10 pt-[72px] text-[15px] text-dark-text">
       <div className="mb-14 flex flex-wrap justify-between gap-x-16 gap-y-10">
         <div className="min-w-0 flex-[1_1_260px]">
-          <p className="mb-3.5 font-serif text-[30px] font-medium uppercase tracking-[0.14em] text-white">{siteConfig.name}</p>
+          <Logo name={siteConfig.name} markClassName="h-11 w-11" className="mb-4 text-[28px] text-white" />
           <p>
             hello@aurelia.example
             <br />
